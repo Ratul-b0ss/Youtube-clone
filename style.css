@@ -1,0 +1,650 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #181818;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    position: fixed;
+    top:0%;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #181818;
+}
+
+.search {
+    width: 55%;
+    height: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.search:hover {
+    background-color: #3d3d3d;
+}
+
+#lefthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    padding-right: 100px;
+}
+
+.midhead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+}
+
+.midhead input {
+    width: 90%;
+    height: 100%;
+    background-color: #000;
+    padding: 0px 30px;
+    border: 1px solid #3d3d3d;
+    color: #f1f1f1;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+
+}
+
+.midhead input:focus {
+    outline: none;
+    border: 1px solid #3ea6ff;
+}
+
+#lefthead h1 {
+    cursor: pointer;
+}
+
+#lefthead .cross {
+    height: 40px;
+    width: 40px;
+    background-color: #212121;
+    border-radius: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#lefthead .cross:hover {
+    background-color: #3d3d3d;
+}
+
+#righthead .ri-account-circle-line {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+#videos {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+.videoleft {
+    height: 100%;
+    width: 67%;
+}
+
+#video {
+    background-color: #212121;
+    width: 100%;
+    height: 75%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video h4 a {
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+#video h4 a:hover {
+    text-decoration: underline;
+}
+
+#videoright {
+    height: 100%;
+    width: 33%;
+}
+
+.adbox {
+    width: 100%;
+    height: 24%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+}
+
+.adbox a {
+    color: #fff;
+}
+
+.recvideotype {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.recvideotype ul li {
+    list-style-type: none;
+    background-color: #3d3d3d;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3 ease-in;
+}
+
+.recvideotype ul li:hover {
+    background-color: #5d5d5d;
+}
+
+.recvideotype ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.recvideotype ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    gap: 10px;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.smallvideos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 10px;
+}
+
+.smallvideo {
+    background-color: #3d3d3d;
+    height: 100px;
+    width: 40%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.smallvideo i {
+    font-size: 80px;
+}
+
+.smallvideodata {
+    width: 50%;
+    margin-top: 5px;
+}
+
+.smallvideotitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.smallvideotitle i {
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smallvideotitle i:hover {
+    background-color: #212121;
+}
+
+.subs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.smallvideodata h5 {
+    font-weight: 100;
+    color: #AAAAAA;
+}
+
+.shortvidbox {
+    background-color: #3d3d3d;
+    height: 220px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shortvidbox i {
+    font-size: 100px;
+}
+
+.shortstext {
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-top: 1px solid #3d3d3d;
+}
+
+.shortvideodata {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.shortsvideos {
+    height: 280px;
+    width: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 150px;
+}
+
+.shortvideotitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shortvideotitle i {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.shortvideotitle i:hover {
+    background-color: #212121;
+}
+
+.shorts {
+    padding-left: 10px;
+    display: flex;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
+.videotitle {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.videotitle h2 {
+    font-size: 22px;
+}
+
+.channlepic {
+    width: 50px;
+    height: 50px;
+    background-color: #212121;
+    border-radius: 50px;
+}
+
+.videooptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.videooptionleft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.channlepic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.channlepic i {
+    font-size: 40px;
+}
+
+.subsinfo h5 {
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+
+.videooptionleft button {
+    width: 90px;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.videooptionleft button:hover {
+    background-color: #e5e5e5;
+}
+
+.videooptionright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #3d3d3d;
+    height: 35px;
+    width: 120px;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.like {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 100%;
+    width: 60%;
+    padding: 10px;
+}
+.borderinlikes{
+    height: 60%;
+    width: 1px;
+    background-color: #5d5d5d;
+    
+}
+.like:hover {
+    background-color: #5d5d5d;
+}
+
+.like i {
+    font-size: 19px;
+}
+
+.dislike{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.dislike:hover{
+    background-color: #5d5d5d;
+}
+.dislike i{
+    font-size: 19px;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3d3d;
+    gap: 5px;
+    padding: 7px 13px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.share i{
+    font-size: 20px;
+}
+.share:hover {
+    background-color: #5d5d5d;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3d3d;
+    gap: 5px;
+    padding: 7px 13px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.download:hover {
+    background-color: #5d5d5d;
+}
+
+.vidmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3d3d;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.vidmenu:hover {
+    background-color: #5d5d5d;
+}
+
+.description{
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.descriptionbox{
+    background-color: rgb(69, 68, 68);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+.viddate{
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    gap: 10px;
+}
+
+.viddate h4{
+    font-size: 14.5px;
+}
+
+.viddate #tags{
+    font-weight: 400;
+    color: #7a7a7a;
+    font-size: 15px;
+}
+
+.viddescription p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.commentssection{
+    margin-top:20px ;
+    height: 100vh;
+}
+
+.commentdeatails{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 0px 10px;
+}
+
+.commentdeatails h3{
+    font-size: 21px;
+}
+
+.commentdeatails h4{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.commentdeatails h4 i{
+    font-size: 21px;
+}
+
+.uppercomment{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.userid i{
+    font-size: 45px;
+}
+
+.username{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.commenttext{
+    padding: 5px;
+}
+
+.commenttext p{
+    font-size: 15px;
+}
+
+.comentlikesection{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding-left: 50px;
+}
+
+.comentlikesection i{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.comentlikesection i:hover{
+    background-color: #7a7a7a;
+}
+
+.comentlikesection h4{
+    height: 35px;
+    width: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.comentlikesection h4:hover{
+    background-color: #7a7a7a;
+}
+
+.comments{
+    margin-top: 20px;
+}
+.myuserid i{
+    font-size: 50px;
+}
+.mycomment{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-bottom:25px ;
+}
+.myuserscomment{
+    width: 100%;
+    padding-top: 4px;
+}
+.myuserscomment input{
+    font-size: 15px;
+    height: 25px;
+    width: 100%;
+    color: #9c9b9b;
+    background-color:#181818;
+    border: none;
+    border-bottom: 1px solid #434343; 
+    background-color: transparent; 
+}
+.myuserscomment input::placeholder {
+    color: #c8c8c8;
+}
+
+.myuserscomment input:focus{
+   outline: none;
+       border-bottom: 1px solid #dad3d3; 
+}
